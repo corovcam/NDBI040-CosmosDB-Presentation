@@ -32,5 +32,5 @@ erDiagram
     
     Tag }o--|{ WebsiteRecord : HAS_TAG
     WebsiteRecord ||--o{ Execution : STARTED
-    Execution ||--o| Node : HAS_ROOT
+    Execution |o--o| Node : HAS_ROOT
     Node }o--o{ Node : LINKS_TO
