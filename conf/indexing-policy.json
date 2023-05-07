@@ -1,0 +1,36 @@
+{
+    "indexingMode": "consistent",
+    "automatic": true,
+    "includedPaths": [
+        {
+            "path": "/*"
+        }
+    ],
+    "excludedPaths": [
+        {
+            "path": "/\"_etag\"/?"
+        }
+    ],
+    "compositeIndexes": [
+        [
+            {
+                "path": "/url",
+                "order": "ascending"
+            },
+            {
+                "path": "/executionId",
+                "order": "ascending"
+            }
+        ],
+        [
+            {
+                "path": "/url",
+                "order": "descending"
+            },
+            {
+                "path": "/executionId",
+                "order": "descending"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,1 @@
+docker run -it --rm --name=gremlin-console cosmosdb-gremlin-console

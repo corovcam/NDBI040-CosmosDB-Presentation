@@ -1,0 +1,155 @@
+{
+    "labels": [
+        [
+            "cycle"
+        ],
+        [],
+        []
+    ],
+    "objects": [
+        {
+            "id": "0024bbab-94eb-4437-988a-6c9615b0f7fd",
+            "label": "Node",
+            "properties": [
+                {
+                    "key": "recordId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "0024bbab-94eb-4437-988a-6c9615b0f7fd|recordId",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "url",
+                    "value": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9",
+                    "metaPropertyOf": null,
+                    "id": "f23ec2d3-8b56-40e1-823a-a4388c0f5a32",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "executionId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "d6a6fdc7-4c7f-4b53-b4e2-ba26baa94a4f",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "title",
+                    "value": "Penguins of Madagascar",
+                    "metaPropertyOf": null,
+                    "id": "20089560-d8a3-4b06-8b37-d76778ff69f6",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "crawlTime",
+                    "value": 80,
+                    "metaPropertyOf": null,
+                    "id": "cc1bec2c-cdb3-40a5-97c0-ed93ca540646",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "data",
+                    "value": "",
+                    "metaPropertyOf": null,
+                    "id": "2a6c3e36-390a-41b0-9c0d-2b2f26aae38a",
+                    "cardinality": "single"
+                }
+            ]
+        },
+        {
+            "id": "65b3b575-9ec2-42bb-a809-7d3182ca229e",
+            "label": "Node",
+            "properties": [
+                {
+                    "key": "recordId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "65b3b575-9ec2-42bb-a809-7d3182ca229e|recordId",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "url",
+                    "value": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1",
+                    "metaPropertyOf": null,
+                    "id": "05fc14eb-6388-413d-ab95-160dbe41fcd6",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "executionId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "d6fa1790-b8af-4ff3-93fe-29e67d99b6fe",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "title",
+                    "value": "Penguins of Madagascar - Season 1",
+                    "metaPropertyOf": null,
+                    "id": "b447d903-0fa1-4392-8b96-00a2cc94e7d4",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "crawlTime",
+                    "value": 80,
+                    "metaPropertyOf": null,
+                    "id": "040b1429-7984-4028-8bd1-9e0927dfb77f",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "data",
+                    "value": "",
+                    "metaPropertyOf": null,
+                    "id": "49e2a9b1-6ae3-4642-a94e-a7b80115a973",
+                    "cardinality": "single"
+                }
+            ]
+        },
+        {
+            "id": "cdb98a01-0900-44a0-bf76-34e268b0c833",
+            "label": "Node",
+            "properties": [
+                {
+                    "key": "recordId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "cdb98a01-0900-44a0-bf76-34e268b0c833|recordId",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "url",
+                    "value": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/2",
+                    "metaPropertyOf": null,
+                    "id": "d7b64f55-2eec-42d1-be1a-369f1c8f5922",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "executionId",
+                    "value": 3,
+                    "metaPropertyOf": null,
+                    "id": "853448e9-5a7b-4c8c-98e8-c9b51eb9678e",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "title",
+                    "value": "Penguins of Madagascar - Season 2",
+                    "metaPropertyOf": null,
+                    "id": "8624f257-ed1a-4278-b7e7-b48414a24ddf",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "crawlTime",
+                    "value": 80,
+                    "metaPropertyOf": null,
+                    "id": "5fdd2017-d6bf-450f-b89d-1b8132daf9fd",
+                    "cardinality": "single"
+                },
+                {
+                    "key": "data",
+                    "value": "",
+                    "metaPropertyOf": null,
+                    "id": "9c7edc63-d02a-4ece-9e89-dbf87eccd66f",
+                    "cardinality": "single"
+                }
+            ]
+        }
+    ]
+}

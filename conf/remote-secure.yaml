@@ -1,0 +1,8 @@
+hosts: [249e364d-0ee0-4-231-b9ee.gremlin.cosmos.azure.com] 
+port: 443
+username: /dbs/ndbi040-project/colls/Webcrawler
+password: zIq3ZrvE0MQsf1NBmjw9uenJorLF4S0boknXHVRsEfkiOWb0An0WAGKUf4ERALvJLUcC1u9sfNtIACDbBgh7sg==
+connectionPool: {
+  enableSsl: true
+}
+serializer: { className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV2d0, config: { serializeResultToString: true }}

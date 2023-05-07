@@ -1,0 +1,26 @@
+{
+    "labels": [
+        [],
+        [],
+        [],
+        []
+    ],
+    "objects": [
+        {
+            "title": "Amazon Prime",
+            "url": "https://amazon.com/prime"
+        },
+        {
+            "title": "Amazon Prime Video",
+            "url": "https://amazon.com/prime/video"
+        },
+        {
+            "title": "Penguins of Madagascar - Season 1",
+            "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1"
+        },
+        {
+            "title": "Penguins of Madagascar - Season 1 - Episode 7",
+            "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/7"
+        }
+    ]
+}

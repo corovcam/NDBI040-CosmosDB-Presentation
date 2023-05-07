@@ -1,0 +1,157 @@
+[
+    {
+        "title": "Amazon Prime",
+        "url": "https://amazon.com/prime",
+        "degree": 18
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1",
+        "degree": 11
+    },
+    {
+        "title": "Penguins of Madagascar - Season 2",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/2",
+        "degree": 7
+    },
+    {
+        "title": "Amazon",
+        "url": "https://amazon.com",
+        "degree": 6
+    },
+    {
+        "title": "Penguins of Madagascar",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9",
+        "degree": 5
+    },
+    {
+        "title": "Amazon Prime Video",
+        "url": "https://amazon.com/prime/video",
+        "degree": 5
+    },
+    {
+        "title": "Google Search",
+        "url": "https://google.com/search",
+        "degree": 4
+    },
+    {
+        "title": "Example Website",
+        "url": "https://example.com",
+        "degree": 3
+    },
+    {
+        "title": "Google",
+        "url": "https://google.com",
+        "degree": 3
+    },
+    {
+        "title": "Penguins of Madagascar - Season 2 - Episode 1",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/2/episode/1",
+        "degree": 2
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 7",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/7",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Air",
+        "url": "https://amazon.com/prime/air",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Now",
+        "url": "https://amazon.com/prime/now",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Pantry",
+        "url": "https://amazon.com/prime/pantry",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Wardrobe",
+        "url": "https://amazon.com/prime/wardrobe",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Photos",
+        "url": "https://amazon.com/prime/photos",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Music",
+        "url": "https://amazon.com/prime/music",
+        "degree": 2
+    },
+    {
+        "title": "Amazon",
+        "url": "https://amazon.com",
+        "degree": 2
+    },
+    {
+        "title": "About Us",
+        "url": "https://example.com/about",
+        "degree": 2
+    },
+    {
+        "title": "Amazon Prime Reading",
+        "url": "https://amazon.com/prime/reading",
+        "degree": 2
+    },
+    {
+        "title": "Penguins of Madagascar - Season 2 - Episode 2",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/2/episode/2",
+        "degree": 1
+    },
+    {
+        "title": "Amazon Cart",
+        "url": "https://amazon.com/cart",
+        "degree": 1
+    },
+    {
+        "title": "Amazon Checkout",
+        "url": "https://amazon.com/checkout",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 1",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/1",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 2",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/2",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 3",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/3",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 4",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/4",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 5",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/5",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 1 - Episode 6",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/6",
+        "degree": 1
+    },
+    {
+        "title": "Amazon Search",
+        "url": "https://amazon.com/search",
+        "degree": 1
+    },
+    {
+        "title": "Penguins of Madagascar - Season 2 - Episode 3",
+        "url": "https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/2/episode/3",
+        "degree": 1
+    }
+]

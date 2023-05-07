@@ -1,0 +1,981 @@
+{
+    "gremlin": "g.V().\n  hasLabel(\"Node\").\n  project(\"title\", \"url\", \"degree\").by(\"title\").by(\"url\").by(bothE().count()).\n  order().by(select(\"degree\"), decr).\n  executionProfile()",
+    "activityId": "7185a7fb-1205-494e-a251-95034dd193ae",
+    "totalTime": 150,
+    "totalResourceUsage": 193.67,
+    "metrics": [
+        {
+            "name": "GetVertices",
+            "time": 4.731599999999999,
+            "stepResourceUsage": 3.84,
+            "annotations": {
+                "percentTime": 3.16,
+                "percentResourceUsage": 1.98
+            },
+            "counts": {
+                "resultCount": 31
+            },
+            "storeOps": [
+                {
+                    "opType": "Query",
+                    "activityId": "35a5d3f2-947a-4b08-9d2e-c5e93875c5e9",
+                    "fanoutFactor": 1,
+                    "count": 31,
+                    "size": 10963,
+                    "storageCount": 31,
+                    "storageSize": 12080,
+                    "time": 2.94,
+                    "storeResourceUsage": 3.84
+                }
+            ]
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.009699999999999999,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.01,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ValuesOperator",
+            "time": 0.13499999999999998,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.09,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.08330000000000007,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.06,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.0034999999999999983,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ValuesOperator",
+            "time": 0.06420000000000001,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.04,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.08079999999999998,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.05,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.003899999999999999,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.02700000000000002,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.02,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "GetEdges",
+            "time": 142.91910000000013,
+            "stepResourceUsage": 189.83,
+            "annotations": {
+                "percentTime": 95.3,
+                "percentResourceUsage": 98.02
+            },
+            "counts": {
+                "resultCount": 95
+            },
+            "storeOps": [
+                {
+                    "opType": "Query",
+                    "activityId": "9ae524f4-3a22-4210-8d38-94e9c597e0f6",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 3.4,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "e4108504-8671-4319-be83-1408c839b746",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 511,
+                    "storageCount": 2,
+                    "storageSize": 536,
+                    "time": 2.44,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "1cf0182f-f0da-49b3-8740-710d673828b3",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.99,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "84243859-8dfe-47e9-8a3f-7a02b513c3cb",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.65,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "cea2d84f-0248-49fc-b71a-6cb617458f02",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.99,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "c3c3c969-6397-4baa-ae81-2a6b41800078",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 511,
+                    "storageCount": 2,
+                    "storageSize": 536,
+                    "time": 2.05,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "e6fb9f21-4f3f-4854-aef4-f7c620acd1b3",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 496,
+                    "storageCount": 2,
+                    "storageSize": 528,
+                    "time": 2.23,
+                    "storeResourceUsage": 3.26
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "94cec370-8dab-457a-bdb3-7074ab943850",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 496,
+                    "storageCount": 2,
+                    "storageSize": 528,
+                    "time": 1.97,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "a4dd13fa-baff-447c-9936-911741cb7b6f",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.94,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "5305a000-3ee4-409c-97fd-14117a78d2a5",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.96,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "83fd6dae-76dc-4861-ad94-5886b87cfea1",
+                    "fanoutFactor": 1,
+                    "count": 4,
+                    "size": 884,
+                    "storageCount": 4,
+                    "storageSize": 1056,
+                    "time": 2.13,
+                    "storeResourceUsage": 3.32
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "ba336510-bd76-4ea1-acef-45a4f38a7375",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 511,
+                    "storageCount": 2,
+                    "storageSize": 536,
+                    "time": 1.98,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "332f395a-4eb5-4820-82e3-7176a25e7f2c",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 1.75,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "06b01613-6f00-4ab7-9dfc-36656e101acb",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.4,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "fd2f9de7-1749-438f-8e20-d001bd552ea0",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.82,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "23f00ebf-d7fb-4583-b61a-2bb9376d7569",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.07,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "16958c46-8ceb-4cad-a263-e0b93fe17676",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.34,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "a2e5f5e6-4268-484d-939c-a111d23423a6",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.86,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "c4a83257-100b-416c-9a78-d1097111349c",
+                    "fanoutFactor": 1,
+                    "count": 9,
+                    "size": 1854,
+                    "storageCount": 9,
+                    "storageSize": 2376,
+                    "time": 2.22,
+                    "storeResourceUsage": 3.49
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "55440bbf-7e06-4626-ac90-70eedb460539",
+                    "fanoutFactor": 1,
+                    "count": 9,
+                    "size": 1854,
+                    "storageCount": 9,
+                    "storageSize": 2376,
+                    "time": 2.3,
+                    "storeResourceUsage": 3.27
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "98a15e14-3086-4ab4-a5f2-1aa52b1d45cc",
+                    "fanoutFactor": 1,
+                    "count": 4,
+                    "size": 884,
+                    "storageCount": 4,
+                    "storageSize": 1056,
+                    "time": 2.14,
+                    "storeResourceUsage": 3.32
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "fb01cce6-3c53-4945-a17e-795abc843676",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.81,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "8a928e1c-fa86-4550-98da-0e930559d97f",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.13,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "f108ae3e-49eb-4167-b04f-e142dc457442",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.02,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "f276671b-2415-4e39-96d0-ba944967a1de",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.36,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "5756b599-cec7-496f-8d99-df2d8232fc38",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.86,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "2ccccf52-56c6-415d-9428-b2bcca184b0e",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.93,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "77cad5bf-af95-473c-a76a-5eb176c8ff2e",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.96,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "4fa03a2f-18ec-42bb-9eeb-154e3b993149",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.08,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "44f7970c-7fb4-4fb0-94a0-63df2deef920",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.8,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "06e4049e-685f-4987-8970-f04f22ea51b8",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.03,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "bb4de890-ee46-484e-89bd-74a033b10538",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.08,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "c04b9860-26c8-4c95-9833-0abf662b8fee",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "b1f709ee-1959-482e-9cba-566bce6a6518",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.81,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "f1b65da8-7e23-4e4b-8c6c-81e33112a37b",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.96,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "656d0dcb-41b6-4ffd-a5ac-92a9095fc8bd",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.32,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "27e5979c-a318-4d21-a215-74ce91ef8f2c",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 496,
+                    "storageCount": 2,
+                    "storageSize": 528,
+                    "time": 2.19,
+                    "storeResourceUsage": 3.26
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "0f9f3544-a082-4527-befb-1a28bbbd52ba",
+                    "fanoutFactor": 1,
+                    "count": 3,
+                    "size": 690,
+                    "storageCount": 3,
+                    "storageSize": 792,
+                    "time": 2.03,
+                    "storeResourceUsage": 3.09
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "f190517e-38f3-4284-be95-8c4dc7462edd",
+                    "fanoutFactor": 1,
+                    "count": 9,
+                    "size": 1854,
+                    "storageCount": 9,
+                    "storageSize": 2376,
+                    "time": 2.28,
+                    "storeResourceUsage": 3.49
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "1fb47041-7118-4218-baef-74426af2e281",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 496,
+                    "storageCount": 2,
+                    "storageSize": 528,
+                    "time": 1.71,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "41b21886-e9a1-433a-946f-24777d535035",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.76,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "12b52a42-8118-49a5-9677-8275b2e829ad",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.8,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "569abdc5-e867-4cca-a180-8213ba6de616",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 1.9,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "5c80696d-a39e-4622-914d-cd9d11946b1b",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.79,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "a7ac1b9a-5135-49e0-8183-e7c589465be9",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.05,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "c119ddc6-6bf5-4b68-ae43-295d60930471",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.88,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "1782cbb0-38fb-4e16-91cc-73015e7f8088",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 1.8,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "f54e1124-2205-4779-abe9-a21d97c097cd",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.31,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "25647008-b94a-454a-8d82-2a0f3b4b4f30",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.25,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "1fc87c71-0487-481b-8450-995ef22f7045",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.95,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "50eab697-8dfb-467c-8076-887a3ae10680",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 1.88,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "9e659be1-2b81-4440-a41c-e227cf9b78f3",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.98,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "3178973f-a0d0-44a5-a56c-d63db2a9b847",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.27,
+                    "storeResourceUsage": 3.22
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "5fe24929-de59-404c-af63-d7c4b0e7d22d",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 2.07,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "69064bb5-9ac4-4e18-84ab-012fd2014097",
+                    "fanoutFactor": 1,
+                    "count": 4,
+                    "size": 884,
+                    "storageCount": 4,
+                    "storageSize": 1056,
+                    "time": 2.09,
+                    "storeResourceUsage": 3.32
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "a1546fb1-e04d-4d47-acbb-9b85ee3ba731",
+                    "fanoutFactor": 1,
+                    "count": 3,
+                    "size": 690,
+                    "storageCount": 3,
+                    "storageSize": 792,
+                    "time": 1.88,
+                    "storeResourceUsage": 3.09
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "b9860287-2772-4c6c-a8aa-eb29e6c41b05",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 1.78,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "b1ac13a9-904e-43b7-8bb7-3d4febe015d5",
+                    "fanoutFactor": 1,
+                    "count": 2,
+                    "size": 496,
+                    "storageCount": 2,
+                    "storageSize": 528,
+                    "time": 1.81,
+                    "storeResourceUsage": 3.06
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "94c855b2-71e7-4eaf-aa4a-686d7598ff3b",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.93,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "2828b68b-67d0-4853-820f-4940c372b056",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 3.18,
+                    "storeResourceUsage": 3.02
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "57ddfe8c-bc1b-491c-85e8-91faa638ebe5",
+                    "fanoutFactor": 1,
+                    "count": 0,
+                    "size": 36,
+                    "storageCount": 0,
+                    "storageSize": 0,
+                    "time": 2.22,
+                    "storeResourceUsage": 2.79
+                },
+                {
+                    "opType": "Query",
+                    "activityId": "e2490bf9-59b8-4dd0-99d4-467ecf6724ee",
+                    "fanoutFactor": 1,
+                    "count": 1,
+                    "size": 300,
+                    "storageCount": 1,
+                    "storageSize": 264,
+                    "time": 1.83,
+                    "storeResourceUsage": 3.02
+                }
+            ]
+        },
+        {
+            "name": "ProjectAggregation",
+            "time": 0.37809999999990396,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.25,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "QueryDerivedTableOperator",
+            "time": 0.1344999999999743,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.09,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.1168999999999869,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.08,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectByOperator",
+            "time": 0.5391999999999655,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.36,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.0034999999999999983,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "PathOperator",
+            "time": 0.0923,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.06,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ConstantSourceOperator",
+            "time": 0.0030999999999999986,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "DecomposeOperator",
+            "time": 0.0541,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.04,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.07060000000000002,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.05,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "SelectOneOperator",
+            "time": 0.1682999999999999,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.11,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.061500000000000055,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.04,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "OrderOperator",
+            "time": 0.20950000000027558,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.14,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        },
+        {
+            "name": "ProjectOperator",
+            "time": 0.07029999999949155,
+            "stepResourceUsage": 0,
+            "annotations": {
+                "percentTime": 0.05,
+                "percentResourceUsage": 0
+            },
+            "counts": {
+                "resultCount": 31
+            }
+        }
+    ]
+}

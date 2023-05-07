@@ -1,0 +1,36 @@
+erDiagram
+    WebsiteRecord {
+        int recordId PK,pK
+        string url
+        string boundaryRegexp
+        int periodicity
+        string title
+        boolean isActive
+        boolean isBeingCrawled
+    }
+    Execution {
+        int recordId pK
+        int executionId PK
+        boolean isCompleted
+        datetime startTime
+        datetime endTime
+        int sitesCrawledCount
+    }
+    Node {
+        int recordId pK
+        string url PK
+        int executionId PK,FK
+        string title
+        int crawlTime
+        string data "Un/structured HTML data"
+    }
+    Tag {
+        int[] recordId pK "ID list of all tagged Records"
+        string name PK
+        string description
+    }
+    
+    Tag }o--|{ WebsiteRecord : HAS_TAG
+    WebsiteRecord ||--o{ Execution : STARTED
+    Execution ||--o| Node : HAS_ROOT
+    Node }o--o{ Node : LINKS_TO

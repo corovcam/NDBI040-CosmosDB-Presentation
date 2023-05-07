@@ -1,0 +1,448 @@
+{
+  "gremlin": "g.V().\n  has(\"Node\", \"url\", \"https://amazon.com/prime\").\n  repeat(both().simplePath()).\n    until(\n      has(\n        \"url\",\n        \"https://amazon.com/prime/video/63d895bb-dac9-4d32-8e80-37783fe220c9/season/1/episode/7\")).\n  path().by(project('title', 'url').by('title').by('url')).\n  limit(1).\n  executionProfile()",
+  "activityId": "5c832764-e825-4b4a-af74-f89b3545b64d",
+  "totalTime": 169,
+  "totalResourceUsage": 39.26,
+  "metrics": [
+      {
+          "name": "GetVertices",
+          "time": 69.5898,
+          "stepResourceUsage": 3.12,
+          "annotations": {
+              "percentTime": 41.22,
+              "percentResourceUsage": 7.95
+          },
+          "counts": {
+              "resultCount": 1
+          },
+          "storeOps": [
+              {
+                  "opType": "Query",
+                  "activityId": "78c2708f-ab6d-43d0-9868-ba51b807a6af",
+                  "fanoutFactor": 1,
+                  "count": 1,
+                  "size": 391,
+                  "storageCount": 1,
+                  "storageSize": 350,
+                  "time": 50.75,
+                  "storeResourceUsage": 3.12
+              }
+          ]
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.0014999999999999998,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.022799999999999997,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.009699999999999999,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 33
+          }
+      },
+      {
+          "name": "GetEdges",
+          "time": 68.48150000000031,
+          "stepResourceUsage": 23.59,
+          "annotations": {
+              "percentTime": 40.57,
+              "percentResourceUsage": 60.09
+          },
+          "counts": {
+              "resultCount": 124
+          },
+          "storeOps": [
+              {
+                  "opType": "Query",
+                  "activityId": "306ecb16-f7f2-48f4-95ae-8fe7f8527a38",
+                  "fanoutFactor": 1,
+                  "count": 9,
+                  "size": 1854,
+                  "storageCount": 9,
+                  "storageSize": 2376,
+                  "time": 16.34,
+                  "storeResourceUsage": 3.49
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "45a57dbc-78bc-4bab-b416-cc8cf22830f3",
+                  "fanoutFactor": 1,
+                  "count": 9,
+                  "size": 1854,
+                  "storageCount": 9,
+                  "storageSize": 2376,
+                  "time": 15.86,
+                  "storeResourceUsage": 3.27
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "3dd8b01f-4e4d-486b-b91f-8e16cddcf410",
+                  "fanoutFactor": 1,
+                  "count": 15,
+                  "size": 3018,
+                  "storageCount": 15,
+                  "storageSize": 3960,
+                  "time": 6.03,
+                  "storeResourceUsage": 4.47
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "cdae3897-7b8b-472e-8f2a-ff9177ba325a",
+                  "fanoutFactor": 1,
+                  "count": 10,
+                  "size": 2071,
+                  "storageCount": 10,
+                  "storageSize": 2648,
+                  "time": 22.61,
+                  "storeResourceUsage": 4.09
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "e3a034a1-64df-441a-a53a-56d94546e5e1",
+                  "fanoutFactor": 1,
+                  "count": 16,
+                  "size": 3241,
+                  "storageCount": 16,
+                  "storageSize": 4232,
+                  "time": 2.83,
+                  "storeResourceUsage": 4.31
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "1266072e-11e0-485c-ad6f-58b6dc4c228e",
+                  "fanoutFactor": 1,
+                  "count": 12,
+                  "size": 2493,
+                  "storageCount": 12,
+                  "storageSize": 3184,
+                  "time": 2.3,
+                  "storeResourceUsage": 3.96
+              }
+          ]
+      },
+      {
+          "name": "GetNeighborVertices",
+          "time": 11.074799999999655,
+          "stepResourceUsage": 12.55,
+          "annotations": {
+              "percentTime": 6.56,
+              "percentResourceUsage": 31.97
+          },
+          "counts": {
+              "resultCount": 124
+          },
+          "storeOps": [
+              {
+                  "opType": "Query",
+                  "activityId": "55203ab8-82ba-4f84-9a67-6a8098294460",
+                  "fanoutFactor": 1,
+                  "count": 9,
+                  "size": 2979,
+                  "storageCount": 9,
+                  "storageSize": 3240,
+                  "time": 2.52,
+                  "storeResourceUsage": 4.18
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "1d8373df-2a0f-4c0b-8461-ac08eb9cf69b",
+                  "fanoutFactor": 1,
+                  "count": 7,
+                  "size": 2516,
+                  "storageCount": 7,
+                  "storageSize": 2663,
+                  "time": 3.14,
+                  "storeResourceUsage": 3.92
+              },
+              {
+                  "opType": "Query",
+                  "activityId": "66a8eada-003b-47af-a12b-f5eb73a9179a",
+                  "fanoutFactor": 1,
+                  "count": 11,
+                  "size": 4584,
+                  "storageCount": 11,
+                  "storageSize": 4861,
+                  "time": 2.74,
+                  "storeResourceUsage": 4.45
+              }
+          ]
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.07980000000000062,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.05,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 410
+          }
+      },
+      {
+          "name": "DecomposeOperator",
+          "time": 0.6522999999999998,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.39,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 410
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.769000000000005,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.46,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 410
+          }
+      },
+      {
+          "name": "PathOperator",
+          "time": 1.196399999999997,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.71,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 124
+          }
+      },
+      {
+          "name": "SimplePathOperator",
+          "time": 0.5635000000000332,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.33,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 74
+          }
+      },
+      {
+          "name": "PathOperator",
+          "time": 0.31989999999998986,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.19,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 74
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.3877000000000237,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.23,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 74
+          }
+      },
+      {
+          "name": "RepeatOperator",
+          "time": 0.5952999999999804,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.35,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.0008,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "DecomposeOperator",
+          "time": 0.0099,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.0024999999999999996,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ValuesOperator",
+          "time": 0.017200000000000003,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.0158,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ConstantSourceOperator",
+          "time": 0.0005,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ValuesOperator",
+          "time": 0.0117,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.008600000000000002,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.01,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ProjectByOperator",
+          "time": 0.035199999999999995,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.02,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 0.029399999999999996,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.02,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 4
+          }
+      },
+      {
+          "name": "PathOperator",
+          "time": 0.04250000000001819,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.03,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      },
+      {
+          "name": "RangeOperator",
+          "time": 0.12789999999998258,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 0.08,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      },
+      {
+          "name": "ProjectOperator",
+          "time": 14.765900000000016,
+          "stepResourceUsage": 0,
+          "annotations": {
+              "percentTime": 8.75,
+              "percentResourceUsage": 0
+          },
+          "counts": {
+              "resultCount": 1
+          }
+      }
+  ]
+}
